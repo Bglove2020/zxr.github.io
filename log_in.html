@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        body{
+            /*background-image: url("img_11.png");*/
+            /*background-size: cover;*/
+            /*background-position: 0px -150px;*/
+            background-color: rgb(240, 242, 245);
+        }
+        .bk{
+            border: white 2px solid;
+            height: 400px;
+            width: 400px;
+            margin: 120px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            background-color: rgba(255,255,255,1);
+            padding-top: 30px;
+            /*border-radius: 4px;*/
+            /*box-shadow: 1px 1px 2px 2px white;*/
+        }
+        .bk h1{
+            color: rgb(8, 102, 255);
+            height: 50px;
+            width: 160px;
+            line-height: 50px;
+            text-align: center;
+            margin: 0px auto;
+            border-radius: 6px;
+            /*border: blue 2px solid;*/
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        }
+        form{
+            height: 200px;
+            padding: 25px;
+
+        }
+        form input{
+
+            height: 45px;
+            margin: 2.5px auto;
+            border: 1px solid #dddfe2;
+            line-height: 45px;
+            font-size: 20px;
+            color: #1d2129;
+            /*outline: none;可以使点击input时出现的边框消失*/
+            outline: none;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        }
+        .di{
+            width: 100%;
+            display: block;
+        }
+        ::placeholder {
+            color: rgba(29, 33, 41, 0.5); /* 设置透明度 */
+            font-size: 20px; /* 设置字体大小 */
+        }
+        .ddd{
+            width: 40%;
+            text-align: center;
+            flex: 1;
+            color: white;
+            background-color: rgb(24, 119, 242);
+        }
+        .ddd:hover{
+            font-size: 25px;
+        }
+        .ff{
+            display: flex;
+            padding-top: 30px;
+        }
+        hr {
+            width: 100%;
+            margin: 25px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bk">
+        <h1><strong>薯&nbsp;豫</strong></h1>
+        <form action="get">
+            <input class="di" type="text" placeholder="&nbsp;用户名">
+            <br>
+            <input class="di" type="password" placeholder="&nbsp;密码">
+            <br>
+            <div class="ff">
+                <input class="ddd" type="submit" value="登录">
+                <input class="ddd" type="submit" value="注册">
+            </div>
+            <hr>
+        </form>
+    </div>
+</body>
+</html>
