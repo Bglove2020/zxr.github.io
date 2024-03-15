@@ -39,36 +39,65 @@
         }
         form{
             height: 200px;
-            padding: 25px;
-
+            padding: 20px;
         }
-        form input{
-
+        .ddd{
             height: 45px;
             margin: 2.5px auto;
             border: 1px solid #dddfe2;
             line-height: 45px;
             font-size: 20px;
-            color: #1d2129;
             /*outline: none;可以使点击input时出现的边框消失*/
             outline: none;
             border-radius: 6px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-        }
-        .di{
-            width: 100%;
             display: block;
-        }
-        ::placeholder {
-            color: rgba(29, 33, 41, 0.5); /* 设置透明度 */
-            font-size: 20px; /* 设置字体大小 */
-        }
-        .ddd{
             width: 40%;
             text-align: center;
             flex: 1;
             color: white;
             background-color: rgb(24, 119, 242);
+        }
+        .di{
+            width: 90%;
+            height: 45px;
+            outline: none;
+            border:none;
+            display: block;
+            float: left;
+            font-size: 20px;
+        }
+        #pass{
+            width: 90%;
+            height: 45px;
+            outline: none;
+            border:none;
+            display: block;
+            float: left;
+            font-size: 20px;
+        }
+        form .uu{
+            height: 45px;
+            margin: 2.5px auto;
+            border: 1px solid #dddfe2;
+            width: 100%;
+            font-size: 20px;
+            color: #1d2129;
+            border-radius: 6px;
+            padding-left: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        }
+        div img{
+            height: 45px;
+            width: 30px;
+            float: left;
+        }
+        .shouzhi{
+            cursor: pointer;
+        }
+        ::placeholder {
+            color: rgba(29, 33, 41, 0.5); /* 设置透明度 */
+            font-size: 20px; /* 设置字体大小 */
         }
         .ddd:hover{
             font-size: 25px;
@@ -76,6 +105,7 @@
         .ff{
             display: flex;
             padding-top: 30px;
+            border: none;
         }
         hr {
             width: 100%;
@@ -89,9 +119,15 @@
     <div class="bk">
         <h1><strong>薯&nbsp;豫</strong></h1>
         <form action="get">
-            <input class="di" type="text" placeholder="&nbsp;用户名">
+            <div class="uu">
+                <input class="di" type="text" placeholder="&nbsp;用户名">
+                <img src="resource/user.svg" alt="">
+            </div>
             <br>
-            <input class="di" type="password" placeholder="&nbsp;密码">
+            <div class="uu">
+                <input id="pass" type="password" placeholder="&nbsp;密码">
+                <img id="pass_tu" class="shouzhi" src="resource/eye_close.svg" alt="">
+            </div>
             <br>
             <div class="ff">
                 <input class="ddd" type="submit" value="登录">
@@ -100,5 +136,6 @@
             <hr>
         </form>
     </div>
+    <script src="password_change.js"></script>
 </body>
 </html>
