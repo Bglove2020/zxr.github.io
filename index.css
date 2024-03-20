@@ -1,0 +1,164 @@
+body{
+    background-color: rgb(46, 52, 56);
+}
+.global_container{
+    /*实现div居中，一般使用margin左右为auto，同时一定要给div一个宽度*/
+    width: 60%;
+    margin: 0 auto;
+    /*background-color: #dddfe2;*/
+}
+.standard_box{
+    padding: 0 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.nav{
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: rgb(71, 78, 62);
+    /*一般块级元素会如果不定义宽度的话，会自动占据父元素的全部宽度。
+    position: fixed是CSS固定定位，一般用于导航栏吸顶效果。该属性使用的时候要注意一些细节：
+        1.固定定位的盒子必须有宽度，如果没有设置宽度，那么该盒子的宽度就是内容撑开的宽度，如果没有内容那么会默认为0。
+        2.固定定位的盒子跟父级盒子无关，它是以屏幕为准。
+    所以这里要设置60%。
+    */
+    position: fixed;
+    width: 60%;
+}
+.nav ul li{
+    height: 50px;
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+    /*去除无序列表中的每行前的小点*/
+    list-style: none;
+}
+/*伪选择器*/
+.nav ul li:last-child{
+    float: right;
+}
+.nav ul li a{
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    /*去除超链接的下划线*/
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#holder{
+    height: 50px;
+}
+#carousel_chart{
+    height: 250px;
+    background: linear-gradient(rgba(46, 52, 56,0.4), rgba(46, 52, 56, 0.4)), url('resource/img_1.png');
+    background-position: 0px -70px;
+}
+#carousel_chart span{
+    display: block;
+    height: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+#introduction{
+    height:200px;
+    background: linear-gradient(rgba(46, 52, 56,0.5), rgba(46, 52, 56, 0.5)), url('resource/img_3.png');
+    background-position: 0px -350px;
+    color: rgba(255,255,255,1);
+}
+#yam{
+    height: 350px;
+    background: linear-gradient(rgba(46, 52, 56,0.5), rgba(46, 52, 56, 0.5)), url('resource/img_5.png');
+    background-position: -5px -350px;
+    color: rgba(255,255,255,1);
+}
+#product_introduction{
+    background-color: rgb(55, 61, 65);
+    color: white;
+}
+.product{
+    display: flex;
+}
+.unit{
+    height:250px;
+    border: #dddfe2 2px solid;
+    flex: 1;
+    margin: 10px;
+    position: relative;
+
+}
+.unit div{
+    text-align: right;
+    /*一般块级元素会如果不定义宽度的话，会自动占据父元素的全部宽度。
+    position: absolute是CSS绝对定位，该属性使用的时候要注意一些细节：
+        1.绝对定位的盒子脱离标准文档流，必须有宽度，如果没有设置宽度，那么该盒子的宽度就是内容(子元素)撑开的宽度，如果没有内容那么会默认为0。
+        2.绝对定位的盒子跟父级盒子有关(前提需要有父元素设置过定位属性才有关，否则它是以屏幕为准)。
+    所以这里把宽度设置为父元素的80%，然后把left设置为10%，表示元素距离父元素左边的距离是父元素宽度的10%。
+    */
+    position:absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 10px;
+}
+#bottom_nav{
+    height: 300px;
+    background: linear-gradient(rgba(46, 52, 56,0.5), rgba(46, 52, 56, 0.5)), url('resource/img_9.png');
+    background-size: cover;
+    background-position: 0px -70px;
+    position: relative;
+}
+#bottom_nav div{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 10px;
+}
+#bottom_nav p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.right_nav{
+    height: 120px;
+    width: 80px;
+    position: fixed;
+    color: white;
+    bottom: 30px;
+    right: 200px;
+    background-color: rgb(55, 61, 65);
+}
+.right_nav a{
+    display: block;
+    height: 30px;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    text-indent: 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

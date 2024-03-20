@@ -5,297 +5,83 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>药食同源-薯豫</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        body{
-            /*position: relative;*/
-            background-color:rgb(46, 52, 56);
-
-        }
-        /*div{*/
-        /*    width: 60%;*/
-        /*    margin: 0px auto;*/
-        /*}*/
-        .dd{
-            width: 100%;
-            position: fixed;
-        }
-        .nav{
-            height: 50px;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-            list-style: none;
-            background-color: rgb(71, 78, 62);
-            /*position: fixed;*/
-        }
-        .nav li{
-            float: left;
-
-            width: 120px;
-            margin-left: 30px;
-        }
-        #nav_last{
-            float: right;
-            margin-right: 30px;
-        }
-        .nav_a{
-            color: white;
-            text-decoration: none;
-            display: block;
-            font-size: 18px;
-            line-height: 50px;
-            text-align: center;
-        }
-        .nav_a:hover{
-            font-size: 20px;
-            background-color:black;
-        }
-        .wen{
-            width: 60%;
-            margin: 0px auto;
-        }
-        .zhijia{
-            height: 50px;
-        }
-        .title{
-            /*border: white 2px solid;*/
-            width: 60%;
-            height: 250px;
-            margin: 10px auto;
-            background: linear-gradient(rgba(46, 52, 56,0.4), rgba(46, 52, 56, 0.4)), url('resource/img_1.png');
-            background-position: 0px -70px;
-            font-size: 50px;
-            color: rgba(255,255,255,90%);
-        }
-        .title span{
-            display: block;
-            height: 50px;
-            padding: 10px;
-            margin-left: 10px;
-
-        }
-        .s_title{
-            width: 100%;
-            /*border: white 2px solid;*/
-            display: flex;
-        }
-        .s_title .union{
-            flex: 1;
-            float: left;
-            height:250px;
-            /*border: white 2px solid;*/
-            background-color: rgb(55, 61, 65);
-        }
-        #qc{
-            clear: both;
-        }
-        #jy1{
-            margin-left: 30px;
-            margin-right: 15px;
-            /*background-image: url("img_6.png");*/
-            background: linear-gradient(rgba(46, 52, 56,0.2), rgba(46, 52, 56, 0.2)), url('resource/img_6.png');
-            background-size: 100%;
-            /*background-position: 0px 0px;*/
-        }
-        #jy2{
-            margin-left: 15px;
-            margin-right: 30px;
-            background: linear-gradient(rgba(46, 52, 56,0.2), rgba(46, 52, 56, 0.2)), url('resource/img_7.png');
-            background-size: cover;
-        }
-        #jy3{
-            background: linear-gradient(rgba(46, 52, 56,0.2), rgba(46, 52, 56, 0.2)), url('resource/img_8.png');
-            background-size: cover;
-        }
-        #shanyao{
-            /*background-image: url("img_2.png");*/
-            background: linear-gradient(rgba(46, 52, 56,0.2), rgba(46, 52, 56, 0.2)), url('resource/img_2.png');
-            background-size: 260%;
-            background-position: -100px 0px;
-        }
-        .jieshao{
-            width: 60%;
-            height: 200px;
-            margin: 0px auto;
-            padding: 10px;
-            box-sizing: border-box;
-            background: linear-gradient(rgba(46, 52, 56,0.5), rgba(46, 52, 56, 0.5)), url('resource/img_3.png');
-            background-position: 0px -350px;
-            color: rgba(255,255,255,1);
-        }
-        .huaiyao{
-            width: 60%;
-            height: 350px;
-            margin: 10px auto;
-            padding: 10px;
-            box-sizing: border-box;
-            background: linear-gradient(rgba(46, 52, 56,0.5), rgba(46, 52, 56, 0.5)), url('resource/img_5.png');
-            background-position: -5px -350px;
-            color: rgba(255,255,255,1);
-        }
-        .huaiyao p{
-            text-indent: 30px;
-        }
-        .jieshao h2{
-            font-size: 30px;
-        }
-        .chanpin{
-            width: 60%;
-            margin: 10px auto;
-            padding: 10px;
-            box-sizing: border-box;
-            background-color: rgb(55, 61, 65);
-            color: white;
-
-        }
-        .s_title div div{
-            /*border: red 2px solid;*/
-            padding: 10px;
-            box-sizing: border-box;
-            line-height: 16px;
-            font-size: 16px;
-
-            position: relative;
-            top: 180px;
-        }
-        .s_title div div p{
-            text-align: right;
-            padding-bottom:5px;
-            box-sizing: border-box;
-        }
-        #dipan{
-            height: 300px;
-            width: 60%;
-            margin: 10px auto;
-            background: linear-gradient(rgba(46, 52, 56,0.5), rgba(46, 52, 56, 0.5)), url('resource/img_9.png');
-            background-size: cover;
-            background-position: 0px -70px;
-        }
-        #dipan div{
-            position: relative;
-            top:200px;
-            font-size: 25px;
-            line-height: 25px;
-            text-align: center;
-            color: white;
-        }
-        #dipan div p{
-            margin-bottom: 10px;
-        }
-        #dipan div hr{
-            width: 80%;
-            margin:0px auto;
-        }
-        .daohang{
-            height: 120px;
-            width: 80px;
-            position: fixed;
-            color: white;
-            bottom: 30px;
-            right: 200px;
-            background-color: rgb(55, 61, 65);
-        }
-        .daohang p{
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-        }
-        .daohang p a:link{
-            text-decoration: none;
-            color: white;
-        }
-
-        .daohang p a:visited{
-            text-decoration: none;
-            color: white;
-        }
-        .daohang p a:hover{
-            text-decoration: none;
-            color: white;
-            font-size: larger;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index_css.css">
 </head>
 <body>
-    <div class="dd">
-        <ul class="nav">
-            <li><a class="nav_a" href="#1">公司介绍</a></li>
-            <li><a class="nav_a" href="#2">怀山药</a></li>
-            <li><a class="nav_a" href="#3">产品介绍</a></li>
-<!--            <li><a class="nav_a" href="#">用户登录</a></li>-->
-            <li id="nav_last"><a class="nav_a" href="log_in.html">用户登录</a></li>
-        </ul>
-    </div>
-    <div class="daohang">
-        <p><a href="#zhijia">回到顶部</a></p>
-        <p><a href="#1">公司介绍</a></p>
-        <p><a href="#2">怀山药</a></p>
-        <p><a href="#3">产品介绍</a></p>
-    </div>
-    <div class="zhijia" id="zhijia"></div>
-
-    <div class="title"><span>薯豫</span></div>
-    <div class="jieshao" id="1">
-        <h2>公司介绍</h2>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp薯豫是一个成立于河南焦作的集种植、生产、加工、销售于一体的农产品公司。公司通过培养山药植物细胞，进行快速繁殖和选择性育种，来培育具有更高产量和更好抗病性的怀山药品种。
-        再通过公司专利超微粉碎技术对山药产品进行再加工，提升山药口感的同时最大程度的保留山药的营养成分。打造一些列怀山药食品，致力于药食同源，打造薯豫IP。
-    </div>
-    <div class="huaiyao" id="2">
-        <h2>焦作-怀山药</h2>
-        <p>焦作市位于河南省，地处太行山和黄河之间的冲积平原。这里的土壤肥沃，得益于太行山的丹河、沁河、济河带来的矿物质元素和黄河的泛滥淤积。当地人种植了历史悠久的地黄、菊花、山药、牛膝等植物，形成了独特的药性，被称为“四大怀药”。</p>
-        <p>怀山药，又称薯蓣或山芋，是一种具有药食同源特性的草本植物，根部肥厚，被视为重要的滋补药材。焦作市的山药品质最优，被誉为怀山药。它被认为具有温补、健脾胃、补肝肾的功效，可用于充饥食用而无不良反应。</p>
-        <p>铁棍山药是温县的一种山药品种，属于怀山药的上品。它的根茎形状圆柱，质地坚实，含有丰富的营养成分，被认为具有多种健康功效，包括滋补、补肺、固肾、抗衰老等。</p>
-        <p>怀山药常用于调理脾虚、肺虚、肾虚等症状，而生山药则常用于处理手足冻疮、痰喘等问题。加工后的山药称为光山药，在入药前需要进行特定的处理。</p>
-
-    </div>
-    <div class="chanpin" id="3">
-        <h2>产品介绍</h2>
-        <div class="s_title">
-            <div class="union" id="shanyao">
-                <div>
-                    <p>纯山药</p>
-                    <p>Pure yam</p>
-                    <hr>
+    <div class="global_container">
+        <div class="nav">
+            <ul>
+                <li><a href="#introduction">公司介绍</a></li>
+                <li><a href="#yam">怀山药</a></li>
+                <li><a href="#product_introduction">产品介绍</a></li>
+                <li><a href="log_in.html">用户登录</a></li>
+            </ul>
+        </div>
+        <div id="holder"></div>
+        <div class="standard_box" id="carousel_chart"><span>薯豫</span></div>
+        <div class="standard_box" id="introduction">
+            <h2>公司介绍</h2>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp薯豫是一个成立于河南焦作的集种植、生产、加工、销售于一体的农产品公司。公司通过培养山药植物细胞，进行快速繁殖和选择性育种，来培育具有更高产量和更好抗病性的怀山药品种。
+            再通过公司专利超微粉碎技术对山药产品进行再加工，提升山药口感的同时最大程度的保留山药的营养成分。打造一些列怀山药食品，致力于药食同源，打造薯豫IP。
+        </div>
+        <div class="standard_box" id="yam">
+            <h2>焦作-怀山药</h2>
+            <p>焦作市位于河南省，地处太行山和黄河之间的冲积平原。这里的土壤肥沃，得益于太行山的丹河、沁河、济河带来的矿物质元素和黄河的泛滥淤积。当地人种植了历史悠久的地黄、菊花、山药、牛膝等植物，形成了独特的药性，被称为“四大怀药”。</p>
+            <p>怀山药，又称薯蓣或山芋，是一种具有药食同源特性的草本植物，根部肥厚，被视为重要的滋补药材。焦作市的山药品质最优，被誉为怀山药。它被认为具有温补、健脾胃、补肝肾的功效，可用于充饥食用而无不良反应。</p>
+            <p>铁棍山药是温县的一种山药品种，属于怀山药的上品。它的根茎形状圆柱，质地坚实，含有丰富的营养成分，被认为具有多种健康功效，包括滋补、补肺、固肾、抗衰老等。</p>
+            <p>怀山药常用于调理脾虚、肺虚、肾虚等症状，而生山药则常用于处理手足冻疮、痰喘等问题。加工后的山药称为光山药，在入药前需要进行特定的处理。</p>
+        </div>
+        <div class="standard_box" id="product_introduction">
+            <h2>产品介绍</h2>
+            <div class="product">
+                <div class="unit">
+                    <div>
+                        <p>纯山药</p>
+                        <p>Pure yam</p>
+                        <hr>
+                    </div>
                 </div>
-
-            </div>
-            <div class="union" id="jy1">
-                <div>
-                    <p>山药奶昔</p>
-                    <p>Yam milk shake</p>
-                    <hr>
+                <div class="unit">
+                    <div>
+                        <p>山药奶昔</p>
+                        <p>Yam milk shake</p>
+                        <hr>
+                    </div>
                 </div>
-            </div>
-            <div class="union" id="jy2">
-                <div>
-                    <p>山药薯片</p>
-                    <p>Yam chips</p>
-                    <hr>
+                <div class="unit">
+                    <div>
+                        <p>山药薯片</p>
+                        <p>Yam chips</p>
+                        <hr>
+                    </div>
                 </div>
-            </div>
-            <div class="union" id="jy3">
-                <div>
-                    <p>山药药材</p>
-                    <p>Yam medicine</p>
-                    <hr>
+                <div class="unit">
+                    <div>
+                        <p>山药药材</p>
+                        <p>Yam medicine</p>
+                        <hr>
+                    </div>
                 </div>
+                <div id="qc"></div>
             </div>
-            <div id="qc"></div>
+        </div>
+        <div class="standard_box" id="bottom_nav">
+            <div>
+                <p class="standard_box">加入我们</p>
+                <p class="standard_box">Join us</p>
+                <hr>
+            </div>
+        </div>
+        <div class="right_nav">
+            <p><a href="#holder">回到顶部</a></p>
+            <p><a href="#introduction">公司介绍</a></p>
+            <p><a href="#yam">怀山药</a></p>
+            <p><a href="#product_introduction">产品介绍</a></p>
         </div>
     </div>
-    <div id="dipan">
-        <div>
-            <p>加入我们</p>
-            <p>Join us</p>
-            <hr>
-        </div>
-    </div>
-
-
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
