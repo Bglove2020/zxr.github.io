@@ -1,0 +1,73 @@
+body{
+    background-color:rgb(46, 52, 56);
+}
+.frame{
+    /*border: white 2px solid;*/
+    height: 400px;
+    width: 400px;
+    margin: 120px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color: rgb(70, 76, 80);
+    padding-top: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+form{
+    padding-top: 20px;
+}
+.main_input{
+    height:45px;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 15px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color:rgb(228, 230, 232);
+}
+.input_border{
+    display: block;
+    height: 45px;
+    width: 90%;
+    line-height: 45px;
+    float: left;
+    outline: none;
+    border:none;
+    background: none;
+    color: black;
+    font-size: 20px;
+}
+img{
+    height: 45px;
+    width: 10%;
+    cursor: pointer;
+}
+.submit{
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin: 15px auto;
+    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
+}
+.submit input{
+    display: block;
+    height: 45px;
+    flex:1;
+    border-radius: 6px;
+    outline: none;
+    border:none;
+    background-color:rgb(228, 230, 232);
+    line-height: 45px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+hr {
+    width: 85%;
+    margin: 0 auto;
+}
